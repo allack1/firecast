@@ -1,0 +1,10 @@
+<textField name="txtNome" x="10" y="10" width="200" height="20" text="Nome do Personagem"/>
+<button name="btnRolarDado" x="10" y="50" width="80" height="30" text="Rolar D20">
+    <event name="onClick">
+        -- Código Lua que será executado quando o botão for clicado
+        local resultado = math.random(1, 20)
+        -- Exemplo: mostrar o resultado em outro campo de texto
+        self.txtResultado.text = "Resultado: " .. resultado
+    </event>
+</button>
+<textField name="txtResultado" x="10" y="90" width="100" height="20" text="Resultado: "/>
